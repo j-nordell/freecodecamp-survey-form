@@ -18,7 +18,7 @@
         <input required id="email" type="email" placeholder="Enter your email">
         <label for="age" id="number-label">Efforts tracked:</label>
         <input type="number" id="number" type="range" min="13" max="100" placeholder="Your age">
-        <p>Moste often I track activities by:</p>
+        <p>Most often I track activities by:</p>
         <select id="dropdown">
             <option>Time spent</option>
             <option>Number of times completed</option>
@@ -27,6 +27,11 @@
             <option>Theme</option>
             <option>Project</option>
         </select>
+        <p>I would prefer to receive notifications via:</p>
+        <label for="app-notification">App</label>
+        <input type="radio" id="app-notification" name="notification" value="app" checked>
+        <label for="email-notification">Email</label>
+        <input type="radio" id="email-notification" name="notification" value="email">
     </form>
 </body>
 </html>
