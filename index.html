@@ -5,49 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LifeGrade Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Let us know how to track your efforts</p>
-    <form id="survey-form">
-        <label for="name" id="name-label">* Name</label>
-        <input required id="name" placeholder="Enter your name">
-        <label for="email" id="email-label">* Email</label>
-        <input required id="email" type="email" placeholder="Enter your email">
-        <label for="age" id="number-label">Age:</label>
-        <input type="number" id="number" type="range" min="13" max="100" placeholder="Your age">
-        <p>Most often I track activities by:</p>
-        <select id="dropdown">
-            <option>Time spent</option>
-            <option>Number of times completed</option>
-            <option>Location</option>
-            <option>Time of day</option>
-            <option>Theme</option>
-            <option>Project</option>
-        </select>
-        <p>I would prefer to receive notifications via:</p>
-        <label for="app-notification">App</label>
-        <input type="radio" id="app-notification" name="notification" value="app" checked>
-        <label for="email-notification">Email</label>
-        <input type="radio" id="email-notification" name="notification" value="email">
-        <p>I am interested in tracking:</p>
-        <label for="projects">Projects</label>
-        <input type="checkbox" id="projects" value="projects">
-        <label for="study">Study</label>
-        <input type="checkbox" id="study" value="study">
-        <label for="physical-fitness">Physical fitness</label>
-        <input type="checkbox" id="physical-fitness" value="physical-fitness">
-        <label for="customer-contact">Customer contact</label>
-        <input type="checkbox" id="customer-contact" value="customer-contact">
-        <label for="hobbies">Hobbies</label>
-        <input type="checkbox" id="hobbies" value="hobbies">
-        <label for="other">Other</label>
-        <input type="checkbox" id="other" value="other">
-        <p>Your suggestions and comments are welcome:</p>
-        <textarea></textarea>
-        <button id="submit" type="submit">Submit</button>
-    </form>
+    <div class="wrapper">
+        <header>
+            <h1 id="title"><span>LifeGrade</span> Survey Form</h1>
+            <p id="description">We'd like to know how you track your efforts.</p>
+        </header>
+        <form id="survey-form">
+            <label for="name" id="name-label">* Name</label>
+            <input required id="name" placeholder="Enter your name">
+            <label for="email" id="email-label">* Email</label>
+            <input required id="email" type="email" placeholder="Enter your email">
+            <label for="age" id="number-label">Age:</label>
+            <input type="number" id="number" type="range" min="13" max="100" placeholder="Age">
+            <p>Most often I track activities by:</p>
+            <select id="dropdown">
+                <option>Time spent</option>
+                <option>Number of times completed</option>
+                <option>Location</option>
+                <option>Time of day</option>
+                <option>Theme</option>
+                <option>Project</option>
+            </select>
+            <p>I would prefer to receive notifications via:</p>
+            <input type="radio" id="app-notification" name="notification" value="app" checked>
+            <label for="app-notification">App</label>
+            <input type="radio" id="email-notification" name="notification" value="email">
+            <label for="email-notification">Email</label>
+            <p>I am interested in tracking:</p>
+            <input type="checkbox" id="projects" value="projects">
+            <label for="projects">Projects</label>
+            <input type="checkbox" id="study" value="study">
+            <label for="study">Study</label>
+            <input type="checkbox" id="physical-fitness" value="physical-fitness">
+            <label for="physical-fitness">Physical fitness</label>
+            <input type="checkbox" id="customer-contact" value="customer-contact">
+            <label for="customer-contact">Customer contact</label>
+            <input type="checkbox" id="hobbies" value="hobbies">
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" id="other" value="other">
+            <label for="other">Other</label>
+            <p>Your suggestions and comments are welcome:</p>
+            <textarea></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
