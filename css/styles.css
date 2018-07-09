@@ -58,8 +58,7 @@
     display: block;
     height: 50px;
     width: 125px;
-    margin-top: 15px;
-    margin: 0 auto;
+    margin: 15px auto;
     text-decoration: none;
     -webkit-transition: 0.25s ease;
     transition: 0.25s ease;
